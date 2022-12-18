@@ -13,6 +13,10 @@
             "options": { "parser": "json" }
         },
         {
+            "files": ".posthtmlrc",
+            "options": { "parser": "json" }
+        },
+        {
             "files": "*.scss",
             "options": { "parser": "scss" }
         },

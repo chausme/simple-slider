@@ -10,12 +10,29 @@
             integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
             crossorigin="anonymous"
         />
-        <link rel="stylesheet" href="./styles.scss" />
+        <link rel="stylesheet" href="./scss/styles.scss" />
     </head>
     <body class="bg-light">
-        <main class="text-center my-5">
-            <h1>Simple Slider</h1>
-        </main>
+        <div class="container">
+            <div class="slider my-5 border border-1 shadow">
+                <div class="slide">
+                    <include src="./src/components/image.html" locals='{"id": 1}'></include>
+                    <h1>1</h1>
+                </div>
+                <div class="slide">
+                    <include src="./src/components/image.html" locals='{"id": 2}'></include>
+                    <h1>2</h1>
+                </div>
+                <div class="slide">
+                    <include src="./src/components/image.html" locals='{"id": 3}'></include>
+                    <h1>3</h1>
+                </div>
+            </div>
+            <div class="controls d-flex justify-content-center">
+                <button class="btn btn-dark btn-prev mx-3" type="button">Prev</button>
+                <button class="btn btn-dark btn-next mx-3" type="button">Next</button>
+            </div>
+        </div>
     </body>
     <script src="./app.js" type="module"></script>
 </html>

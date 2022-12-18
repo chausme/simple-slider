@@ -1,0 +1,49 @@
+<picture>
+    <source
+        media="(min-width: 1400px)"
+        type="image/webp"
+        srcset="
+            ./images/slide-{{id}}.jpg?as=webp&width=1725&quality=75 1x,
+            ./images/slide-{{id}}.jpg?as=webp&width=3450            2x
+        "
+    />
+    <source
+        media="(min-width: 1200px)"
+        type="image/webp"
+        srcset="
+            ./images/slide-{{id}}.jpg?as=webp&width=1450&quality=75 1x,
+            ./images/slide-{{id}}.jpg?as=webp&width=2900            2x
+        "
+    />
+    <source
+        media="(min-width: 992px)"
+        type="image/webp"
+        srcset="
+            ./images/slide-{{id}}.jpg?as=webp&width=1245&quality=75 1x,
+            ./images/slide-{{id}}.jpg?as=webp&width=2490            2x
+        "
+    />
+    <source
+        media="(min-width: 768px)"
+        type="image/webp"
+        srcset="
+            ./images/slide-{{id}}.jpg?as=webp&width=925&quality=75  1x,
+            ./images/slide-{{id}}.jpg?as=webp&width=1850&quality=75 2x
+        "
+    />
+    <source
+        type="image/webp"
+        srcset="
+            ./images/slide-{{id}}.jpg?as=webp&width=690&quality=75  1x,
+            ./images/slide-{{id}}.jpg?as=webp&width=1380&quality=75 2x
+        "
+    />
+    <img
+        src="./images/slide-{{id}}.jpg?as=webp&width=1725&quality=75"
+        srcset="
+            ./images/slide-{{id}}.jpg?as=webp&width=1725&quality=75 1x,
+            ./images/slide-{{id}}.jpg?as=webp&width=3450&quality=75 2x
+        "
+        alt=""
+    />
+</picture>
